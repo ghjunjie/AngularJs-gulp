@@ -1,0 +1,30 @@
+<div  class="text-right hd-top-bar"><span>您好!欢迎登陆管理后台</span>|<span class="btn-link" ng-click="onExit()">退出</span> </div>
+<nav class="navbar-default nav-head" role="navigation">
+	<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">-->
+	<div class="container-fluid header hd-nav-bar">
+		<a class="navbar-brand nav-bar-logo" ui-sref="feitai"></a>
+		<div>
+			<ul class="nav navbar-nav navbar-right">
+				<li ng-repeat="menu in munuList" ng-class="menu.actived?'actived top-nav-item':' top-nav-item'" ng-click="onClickRootMenu(menu.alias)"><a>{{menu.name}}</a></li>
+				<!--<li class="dropdown" uib-dropdown>
+					<a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle>
+						我的
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+						<li role="menuitem">
+							<a href="#">退出</a>
+						</li>
+						<li role="menuitem">
+							<a href="#">个人中心</a>
+						</li>
+					</ul>
+				</li>-->
+			</ul>
+		</div>
+	</div>
+</nav>
+<!--<ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>-->

@@ -1,0 +1,14 @@
+<!--<uib-accordion close-others="oneAtATime">
+	<div uib-accordion-group class="panel-default" heading="{{group.name}}" ng-repeat="group in childMenu.list">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="" ng-repeat="nav in group.list" ui-sref=".{{group.alias}}/{{nav.url}}">{{nav.name}}</li>
+		</ul>
+	</div>
+</uib-accordion>-->
+<!--<ul class="nav nav-pills nav-stacked">
+	<li class="" ng-repeat="nav in group.list" ui-sref=".{{group.alias}}/{{nav.url}}">{{nav.name}}</li>
+</ul>
+<span ng-repeat='nav in childMenu'>{{nav.name}}</span>-->
+	<ul class="nav nav-pills nav-stacked sidenav">
+		<li ng-class="nav.actived?'actived':''" ng-repeat="nav in childMenu.list" ui-sref=".{{childMenu.alias}}/{{nav.url}}">{{nav.name}}</li>
+	</ul>

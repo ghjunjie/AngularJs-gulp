@@ -1,0 +1,20 @@
+<div class="login-bg">
+	<img class="logo" src="./img/logo.png" alt="logo" />
+</div>
+<div class="login-panel">
+	<h2>用户登录</h2>
+	<div class="input username-box">
+		<input ng-model="account" class="login-input username" type="text" name="username" placeholder="请输入用户名" autocomplete="off"/>
+	</div>
+	<div class="input password-box">
+		<input ng-model="password"  ng-keyup="enterEvent($event)" class="login-input password" type="password" name="password"  autocomplete="off" placeholder="请输入密码"/>
+	</div>
+	<div>
+		<label>
+			<input type="checkbox" name="autologin" ng-model="autoLogin"/>自动登录
+		</label>
+		<a class="forget-password">忘记密码?</a>
+	</div>
+	<p class="info" ng-bind="loginInfo"></p>
+	<input class="submit-btn" type="button" ng-click="onLoginSubmit()" value="登录"/>
+</div> 
